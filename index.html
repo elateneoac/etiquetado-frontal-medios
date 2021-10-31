@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <title>Ley de etiquetado frontal de medios</title>
+</head>
+<body class="container" style="background-color: darkgrey;">
+    <h1 class="container-fluid md-8 text-center p-auto m-auto bg-white">Etiquetado frontal de <strong>medios</strong> 📰 🏷️</h1>
+
+    <img class="py-3 container-fluid md-8" id="clarin" onclick="cambiar('clarin')" src="clarin.png" >
+    <img class="py-3 container-fluid md-8" id="lanacion" onclick="cambiar('lanacion')" src="lanacion.png" >
+    <img class="py-3 container-fluid md-8" id="infobae" onclick="cambiar('infobae')" src="infobae.png" >
+    <img class="py-3 container-fluid md-8" id="perfil" onclick="cambiar('perfil')" src="perfil.png" >
+    <img class="py-3 container-fluid md-8" id="ambito" onclick="cambiar('ambito')" src="ambito.png" >
+    <img class="py-3 container-fluid md-8" id="paginadoce" onclick="cambiar('paginadoce')" src="paginadoce.png" >
+    <img class="py-3 container-fluid md-8" id="tn" onclick="cambiar('tn')" src="tn.png" >
+
+</body>
+<script>
+
+    function cambiar(id)
+    {
+        var image =  document.getElementById(id);
+        if (image.getAttribute('src') == id + ".png")
+        {
+            image.src = id +"-etiquetado.png";
+        }
+        else
+        {
+            image.src = id +".png";
+        }
+    }
+</script>
+</html>
